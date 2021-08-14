@@ -36,14 +36,6 @@
     <beans:bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
          <beans:property name="dataSource" ref="myDataSource"/>
         <beans:property name="packagesToScan" value="com.springMVC.Entity"/>
-        <beans:property name="hibernateProperties">
-            <beans:props>
-                <beans:prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</beans:prop>
-                <beans:prop key="hibernate.hbm2ddl.auto">update</beans:prop>
-                <beans:prop key="hibernate.show_sql">true</beans:prop>
-                <beans:prop key="hibernate.format_sql">true</beans:prop>
-            </beans:props>
-        </beans:property>
     </beans:bean>
 
             <!--    HIBERNATE TRANSACTIONAL-->
